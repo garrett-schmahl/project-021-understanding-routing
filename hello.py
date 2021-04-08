@@ -1,6 +1,6 @@
 from flask import Flask  
-
 app = Flask(__name__)    
+
 
 @app.route('/')          
 def hello_world():
@@ -27,5 +27,5 @@ def function_name(error):
     return 'Sorry! No response. Try again.'
 
 
-if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
-    app.run(debug=True)    # Run the app in debug mode.
+if __name__=="__main__":
+    app.run(debug=True) 
