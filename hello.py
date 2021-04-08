@@ -18,8 +18,8 @@ def hello(name):
 
 
 @app.route('/repeat/<int:value>/<word>')
-def show_user_profile(value, word):
-    return int(value) * word
+def repeatWord(value, word):
+    return value * word
 
 
 @app.errorhandler(404)
